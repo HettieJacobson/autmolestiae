@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "clean:node_modules": "rimraf node_modules packages/*/node_modules",
+    "test": "CI=true lerna run test --stream",
+    "prepublish": "lerna run prepublish",
+    "test:coverage": "CI=true lerna run test:coverage --stream && codecov"
+  },
+  "homepage": "https://github.com/HettieJacobson/autmolestiae.git",
+  "devDependencies": {
+    "@types/jest": "^23.3.12",
+    "lerna": "^3.10.5",
+    "typescript": "^3.2.2"
+  },
+  "name": "autmolestiae",
+  "author": "JacksonGerlach",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HettieJacobson/autmolestiae.git"
+  },
+  "version": "1.0.0"
+}
